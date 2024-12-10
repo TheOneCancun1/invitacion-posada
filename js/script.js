@@ -40,19 +40,20 @@
       console.log(guest);
       console.log(attending);
 
-      var dataString = '&entry.1068564038=' + name + '&entry.352472512=' + email + '&entry.1150838879=' + guest + '&entry.66493311=' + attending;
+      var dataString = '&entry.37808587=' + name + '&entry.1533578407=' + email + '&entry.859665581=' + guest + '&entry.550112004=' + attending;
       var form = $(this);
       var str = form.serialize();
       function sent(){
-        $('#div_' + type).html("<div id='form_send_message'>Thank you :)</div>", 1500);
+        $('#div_' + type).html("<div id='form_send_message'>Gracias</div>", 1500);
       }
       $.ajax({
         type: "POST",
-        url: "https://docs.google.com/forms/d/1OCiSMSdit8QgxlhWjO9y9MmtFgpLdo52xf7UaCfY_ng/formResponse",
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSd8ij4o2D8LxNnvK5ybt8FOZ_SR586iqTCSsAy0E47rRzXY2A/formResponse",
         data: dataString,
         complete:sent
       });
     }
+
 
     /*ScrollR */
     if ($(window).width() > 1024) {

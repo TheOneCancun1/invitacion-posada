@@ -412,8 +412,7 @@ header {
   .home_intro {
     background-size: cover; /* Asegura que la imagen cubra el ancho completo */
     background-attachment: scroll; /* Elimina el efecto parallax en móviles */
-    min-height: 50vh; /* Establece una altura mínima para pantallas pequeñas */
-    height: auto; /* Deja que el contenido determine la altura */
+    height: 100%;
     padding: 20px; /* Espaciado interno para mejorar la apariencia en móviles */
   }
 }

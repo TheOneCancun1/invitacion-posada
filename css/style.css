@@ -400,7 +400,7 @@ header {
 .home_intro {
   background-size: cover;
   width: 100%;
-  height: 100vh; /* Ajusta la altura a la vista del dispositivo */
+  height: 100vh; /* Altura de la pantalla completa */
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
@@ -410,10 +410,10 @@ header {
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
   .home_intro {
-    background-size: contain; /* Ajusta la imagen para que no se corte */
+    background-size: cover; /* Asegura que la imagen siempre cubra el ancho completo */
     background-attachment: scroll; /* Elimina el efecto fijo en móviles */
-    height: auto; /* Deja que la sección crezca según su contenido */
-    padding: 20px; /* Añade algo de espacio para evitar que el contenido se vea apretado */
+    height: 100vh; /* Mantiene la imagen cubriendo toda la altura del viewport */
+    padding: 20px; /* Ajusta el padding para mejorar el layout */
   }
 }
 

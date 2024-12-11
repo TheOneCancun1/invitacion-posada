@@ -1854,6 +1854,12 @@ header {
     margin: 0;
   }
 
+@media (max-width: 768px) {
+  .home_txt {
+      font-size: 1.9rem; /* Ajusta el tamaño del texto en móviles */
+      font: Great Vibes;
+  }
+}
   .home_intro {
     background-attachment: scroll;
   }

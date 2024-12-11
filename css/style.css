@@ -413,7 +413,7 @@ header {
 @media (max-width: 768px) {
   /* Para pantallas más pequeñas, como móviles */
   .img-fluid {
-    max-width: 100%; /* Se asegura de no exceder el ancho del contenedor */
+    max-width: 50%; /* Se asegura de no exceder el ancho del contenedor */
     height: auto;    /* Mantiene las proporciones */
   }
 }

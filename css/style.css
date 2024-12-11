@@ -411,6 +411,11 @@ header {
   object-fit: cover; /* Asegura que la imagen cubra bien el espacio sin deformarse */
 }
 
+.img-fluid {
+  width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+  height: auto; /* Mantiene las proporciones de la imagen */
+}
+
 @media only screen and (max-width: 768px) {
   .home_intro {
     height: 100vh; /* Mantener la altura completa de la pantalla en móviles */

@@ -434,11 +434,17 @@ header {
 
 .home_txt {
   position: absolute;
-  margin: 0;
-  padding: 20px;
+  top: 50%; /* Posiciona el contenedor a la mitad de la sección */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Mueve el contenido para que esté perfectamente centrado */
   width: 100%;
   z-index: 4;
-  text-align: center; /* Centra el texto */
+  text-align: center; /* Centra el texto horizontalmente */
+  padding: 20px;
+  display: flex; /* Usamos Flexbox para centrar verticalmente */
+  flex-direction: column; /* Asegura que el contenido se apile verticalmente */
+  justify-content: center; /* Centra el contenido en el eje vertical */
+  align-items: center; /* Centra el contenido en el eje horizontal */
 }
 
 .player {

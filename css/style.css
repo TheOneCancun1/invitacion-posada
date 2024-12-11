@@ -411,6 +411,15 @@ header {
   object-fit: cover; /* Asegura que la imagen cubra bien el espacio sin deformarse */
 }
 
+@media only screen and (max-width: 768px) {
+  .home_intro {
+    height: 100vh; /* Mantener la altura completa de la pantalla en móviles */
+  }
+  .responsive-image {
+    object-fit: cover; /* La imagen sigue cubriendo el área en móviles */
+  }
+}
+
 .into_firefly {
   width: 100%;
   height: 100%;

@@ -412,8 +412,7 @@ header {
 @media (max-width: 768px) {
   .home_intro {
     background-attachment: scroll; /* Desactivar parallax en móviles */
-    background-size: contain; /* Ajustar la imagen para que sea completamente visible */
-    background-position: top center; /* Ajustar la imagen para que se vea bien en pantallas pequeñas */
+    background-position: center center; /* Asegura que la imagen esté centrada */
   }
 }
 
@@ -434,7 +433,8 @@ header {
   margin: 0;
   width: 100%;
   z-index: 4;
-  bottom: 26px;
+  bottom: 20px;
+  text-align: center; /* Centra el texto */
 }
 
 .player {

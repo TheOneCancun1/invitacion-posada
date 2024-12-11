@@ -34,13 +34,20 @@
         $("input#attending_" + type).focus();
         return false;
       }
+      var question = $("input#question_" + type).val();
+      if (question == "") {
+        $("input#question_" + type).css({border: "1px solid red"});
+        $("input#question_" + type).focus();
+        return false;
+      }
 
       console.log(name);
       console.log(email);
       console.log(guest);
       console.log(attending);
+      console.log(question);
 
-      var dataString = '&entry.37808587=' + name + '&entry.1533578407=' + email + '&entry.859665581=' + guest + '&entry.550112004=' + attending;
+      var dataString = '&entry.37808587=' + name + '&entry.1533578407=' + email + '&entry.859665581=' + guest + '&entry.550112004=' + attending + '&entry.1942052648=' + question;
       var form = $(this);
       var str = form.serialize();
       function sent(){

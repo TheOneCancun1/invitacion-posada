@@ -414,9 +414,12 @@ header {
 @media only screen and (max-width: 768px) {
   .home_intro {
     height: 100vh; /* Mantener la altura completa de la pantalla en móviles */
+    display: flex;
+  object-fit: cover; /* Asegura que la imagen cubra bien el espacio sin deformarse */
   }
   .responsive-image {
     object-fit: cover; /* La imagen sigue cubriendo el área en móviles */
+     display: flex;
   }
 }
 
@@ -434,17 +437,12 @@ header {
 
 .home_txt {
   position: absolute;
-  top: 50%; /* Posiciona el contenedor a la mitad de la sección */
-  left: 50%; /* Centra horizontalmente */
-  transform: translate(-50%, -50%); /* Mueve el contenido para que esté perfectamente centrado */
+  margin: 0;
+  padding: 20px;
   width: 100%;
   z-index: 4;
-  text-align: center; /* Centra el texto horizontalmente */
-  padding: 20px;
-  display: flex; /* Usamos Flexbox para centrar verticalmente */
-  flex-direction: column; /* Asegura que el contenido se apile verticalmente */
-  justify-content: center; /* Centra el contenido en el eje vertical */
-  align-items: center; /* Centra el contenido en el eje horizontal */
+  bottom: 20px;
+  text-align: center; /* Centra el texto */
 }
 
 .player {

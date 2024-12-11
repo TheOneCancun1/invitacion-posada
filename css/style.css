@@ -402,6 +402,7 @@ header {
   height: 100vh; /* Altura completa de la pantalla */
   position: relative;
   display: flex;
+  object-fit: cover; /* Asegura que la imagen cubra bien el espacio sin deformarse */
 }
 
 .responsive-image {

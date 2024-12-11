@@ -410,14 +410,6 @@ header {
   height: auto; /* Mantiene las proporciones de la imagen */
 }
 
-@media (max-width: 768px) {
-  /* Para pantallas más pequeñas, como móviles */
-  .img-fluid {
-    max-width: 50%; /* Se asegura de no exceder el ancho del contenedor */
-    height: auto;    /* Mantiene las proporciones */
-  }
-}
-
 
 .into_firefly {
   width: 100%;

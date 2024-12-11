@@ -405,12 +405,6 @@ header {
   object-fit: cover; /* Asegura que la imagen cubra bien el espacio sin deformarse */
 }
 
-.responsive-image {
-  width: 100%; /* La imagen tomará el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
-  object-fit: cover; /* Asegura que la imagen cubra bien el espacio sin deformarse */
-}
-
 .img-fluid {
   width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
   height: auto; /* Mantiene las proporciones de la imagen */
